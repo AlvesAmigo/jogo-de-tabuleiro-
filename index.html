@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dados D6 RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rolagem de Teste (D6)</h1>
+        <p>Regra: 1-3 (Erro), 4-5 (Acerto), 6 (Acerto Duplo)</p>
+
+        <label for="numDados">Quantos Dados (D6) Você Vai Rolar?</label>
+        <input type="number" id="numDados" value="3" min="1">
+
+        <label for="dificuldade">Dificuldade (Acertos Necessários - C)</label>
+        <input type="number" id="dificuldade" value="3" min="1">
+
+        <button onclick="rolarDados()">ROlar TESTE</button>
+
+        <div id="resultado" class="resultado">
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
